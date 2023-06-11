@@ -3,6 +3,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 import monkey from './models/test_tpm.gltf';
+import stars from './models/stars.gltf';
 
 export default function App(_container){
 
@@ -73,7 +74,7 @@ export default function App(_container){
 				const model = gltf.scene;
 				model.position.set( 0, 0.4, 0 );
 				model.scale.set( 10, 10, 10 );
-				scene.add( model );
+				///scene.add( model );
                 console.log(model.children[0].material)
                 model.children[0].material.transparent = true;
                 model.children[0].material.opacity = 0.6;
@@ -89,6 +90,7 @@ export default function App(_container){
             function ( error ) {
 
                 console.log( 'An error happened' );
+                console.log( error );
         
             }
             
@@ -166,7 +168,7 @@ export default function App(_container){
         var childObject = mesh.children[0];
         let positions = childObject.geometry.attributes.position.array;
         let pCount =  childObject.geometry.attributes.position.count;
-        geometry = new THREE.SphereGeometry(0.3,5,5);
+        geometry = new THREE.SphereGeometry(0.01,5,5);
         geometry.computeVertexNormals();
         material =  new THREE.MeshNormalMaterial({transparent:true, opacity:0.4});
         material.blending = THREE.AdditiveBlending;

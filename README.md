@@ -1,4 +1,4 @@
 # Uni
-exploration on XR scale
+exploration on XR scalenpm start
 npm install
 npm start

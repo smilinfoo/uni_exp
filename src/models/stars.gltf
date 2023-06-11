@@ -1,0 +1,57 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "normalized": false,
+      "count": 9666,
+      "type": "VEC3",
+      "max": 0.9512326717376709,
+      "min": -0.9464610815048218
+    }
+  ],
+  "asset": {
+    "generator": "pygltflib@v1.15.6",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 38664,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "stars.bin",
+      "byteLength": 38664
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0
+          },
+          "mode": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
